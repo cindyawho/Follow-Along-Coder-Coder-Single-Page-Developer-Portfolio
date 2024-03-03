@@ -41,8 +41,21 @@ body {
     margin-inline: auto; /*centering*/
 }
 
-@media (min-width: 37.5em) {/*switching from mobile size to tablet passing 600px, use ems for break points in case broswer-based font-size was changed*/
+@media (min-width: 37.5em) {
+    /*switching from mobile size to tablet passing 600px, use ems for break points in case broswer-based font-size was changed*/
     .wrapper {
         width: calc(100% - 3.75rem);
     }
+}
+
+/*Header*/
+.header{
+
+}
+.headerHome {
+    /*https://royalfig.github.io/fluid-typography-calculator/*/
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
+    color: var(--white-main-text);
+    text-decoration: none;
 }
