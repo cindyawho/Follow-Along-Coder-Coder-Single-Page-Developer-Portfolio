@@ -1,0 +1,24 @@
+:root {
+    --black-bg: hsl(0, 0%, 8%); /*hsl is better practice to change dark/light*/
+    --dark-grey-bg: hsl(0, 0%, 14%);
+    --green-accent: hsl(153, 71%, 59%);
+    --white-main-text: hsl(0, 0%, 100%); /*text-1*/
+    --gray-text: hsl(0, 0%, 85%); /*text-2*/
+    --red-invalid: hsl(7, 100%, 68%);
+}
+
+html {
+    box-sizing: border-box; /*so that padding doesn't add width or height to the elements*/
+    font-size: 100; /*takes browser based font styles*/
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--black-bg);
+    color: var(--white-main-text);
+}
