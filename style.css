@@ -1,10 +1,18 @@
 :root {
+    /*Font Size Colors*/
     --black-bg: hsl(0, 0%, 8%); /*hsl is better practice to change dark/light*/
     --dark-grey-bg: hsl(0, 0%, 14%);
     --green-accent: hsl(153, 71%, 59%);
     --white-main-text: hsl(0, 0%, 100%); /*text-1*/
     --gray-text: hsl(0, 0%, 85%); /*text-2*/
     --red-invalid: hsl(7, 100%, 68%);
+    /*Font Size Variables*/
+    --fs-18: 1.125rem; /*font size ratios will adjust based on browser font*/ 
+    --fs-88: 5.5rem;
+    --fs-72: 4.5rem;
+    --fs-40: 2.5rem;
+    --fs-48: 3rem;
+    --fs-24: 1.5rem;
 }
 
 html {
@@ -21,4 +29,6 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: var(--black-bg);
     color: var(--white-main-text);
+    font-size: var(--fs-18);
+    line-height: 1.56;
 }
