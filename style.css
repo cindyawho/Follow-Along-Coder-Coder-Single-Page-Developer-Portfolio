@@ -36,7 +36,13 @@ body {
 }
 
 .wrapper {
-    width: 100%;
+    width: calc(100% - 2rem); /*16 px margins on either size for mobile width*/
     max-width: var(--container);
     margin-inline: auto; /*centering*/
+}
+
+@media (min-width: 37.5em) {/*switching from mobile size to tablet passing 600px, use ems for break points in case broswer-based font-size was changed*/
+    .wrapper {
+        width: calc(100% - 3.75rem);
+    }
 }
