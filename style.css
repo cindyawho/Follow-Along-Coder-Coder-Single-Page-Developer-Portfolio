@@ -90,8 +90,9 @@ a:hover {
     flex: 1 0 100%;
 }
 
-.headerSocial { /*Inline block so that there's no underline next to icon hover*/
-    display: inline-block;
+.headerSocial svg { /*Inline block so that there's no underline next to icon hover*/
+    display: block;
+    /*outline: 2px solid red; //checking placement of icons, use outline instead of border because border adds to the size of the image*/
 }
 
 .headerSocial path {
@@ -107,6 +108,7 @@ a:hover {
         justify-content: flex-start;
         align-items: center;
         text-align: left;
+        gap: 32px;
     }
 
     .headerHome{
