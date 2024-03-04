@@ -70,14 +70,24 @@ a:hover {
 
 /*Header*/
 .header{
-
+    margin-top: 20px; /*use rem mostly for text, px is okay for smaller stuff that doesn't need to scale*/
 }
+
+.headerNav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px 25px; /*row and column gap by flex*/
+}
+
 .headerHome {
     /*https://royalfig.github.io/fluid-typography-calculator/*/
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 1.02rem + 2.04vw, 2rem);
     color: var(--white-main-text);
     text-decoration: none;
+    flex: 1 0 100%;
 }
 
 .headerSocial { /*Inline block so that there's no underline next to icon hover*/
@@ -90,4 +100,17 @@ a:hover {
 
 .headerSocial:hover path { /*svg:hover path OR a:hover > svg > path*/
     fill: var(--green-accent);
+}
+
+@media (min-width: 37.5em) {
+    .headerNav{
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+    }
+
+    .headerHome{
+        flex: 1;
+        margin-inline-end: auto;
+    }
 }
