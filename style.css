@@ -41,7 +41,11 @@ a:hover {
     color: var(--green-accent);
 }
 
-svg:hover path {
+.headerSocial { /*Inline block so that there's no underline next to icon hover*/
+    display: inline-block;
+}
+
+.headerSocial:hover path { /*svg:hover path OR a:hover > svg > path*/
     fill: var(--green-accent);
 }
 
