@@ -135,22 +135,12 @@
     <main id="main">
         <section class="hero">
             <div class="wrapper"> 
-                <picture>
+                <picture class="heroImage">
                     <source media="(min-width: 62.5em)" srcset="./assets/images/profilePic-desktop.png">
                     <source media="(min-width: 37.5em)" srcset="./assets/images/profilePic-tablet.png">
                     <img src="./assets/images/profilePic.png" alt="Profile Picture of Cindy Andrade">
                 </picture>
-<!-- 
-                <img 
-                    src="./assets/images/profilePic.png" 
-                    alt = "Profile Picture of Cindy Andrade" 
-                    srcset="
-                        ./assets/images/profilePic.png 338w, 
-                        ./assets/images/profilePic-tablet.png 409w, 
-                        ./assets/images/profilePic-desktop.png 473w
-                    " 
-                    sizes = "(max-width: 599.98px) 70vw, (max-width: 998.98px) 53vw, 473px"
-                />  -->
+
                 <!--Default image via mobile, 
                     sizes originally had "(min-width: 600px) 53vw, (min-width: 1000px) 33vw"
                     53vw gotten by 409/768, 768 is from design doc tablet size
@@ -170,17 +160,22 @@
                             sizes = "(max-width: 599.98px) 70vw, (max-width: 998.98px) 53vw, 473px"
                         /> "
                 -->
-                <h1>Nice to meet you! I'm Cindy Andrade.</h1>
+                
+                <div class="heroText">
+                    <h1 class="heroHeadline">Nice to meet you! I'm Cindy Andrade.</h1>
+                    <p class="heroDescription">
+                        Based in Los Angeles, I'm currently a math teacher developing my coding skills. I'm enjoying this journey as I learn something new!
+                    </p>
+                    <a href="" class="heroContact">Contact Me</a>
+                </div>
+                
+                
             </div>
         </section>
         
     </main>
 
     <footer class="footer">
-        
-            Based in Los Angeles, I'm currently a math teacher developing coding skills. 
-
-            Contact me
 
             HTML CSS Python 
             
