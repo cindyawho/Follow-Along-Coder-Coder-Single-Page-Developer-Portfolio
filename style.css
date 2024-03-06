@@ -1,4 +1,4 @@
-/*Global Styles*/
+/*-------------Global Styles-------------*/
 
 :root {
     /*Font Size Colors*/
@@ -68,7 +68,7 @@ a:hover {
     }
 }
 
-/*Header*/
+/*-------------Header-------------*/
 .header{
     margin-top: 20px; /*use rem mostly for text, px is okay for smaller stuff that doesn't need to scale*/
 }
@@ -115,4 +115,30 @@ a:hover {
         flex: 1;
         margin-inline-end: auto;
     }
+}
+
+/*-------------HERO-------------*/
+
+.hero{
+
+}
+
+.heroWrapper {
+
+}
+
+.heroImage {
+
+}
+
+.heroText {
+
+}
+
+.heroDescription {
+
+}
+
+.heroContact {
+
 }
