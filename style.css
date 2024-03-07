@@ -124,11 +124,13 @@ a:hover {
 }
 
 .heroWrapper {
-
+    position: relative; /*so that image is relative to wrapper*/
 }
 
 .heroImage {
-
+    position: absolute;
+    left: 50%; /*move it 50% to left from where it was originally*/
+    translate: -50%;
 }
 
 .heroText {
