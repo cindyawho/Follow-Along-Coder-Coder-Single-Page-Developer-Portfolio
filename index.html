@@ -135,10 +135,15 @@
     <main id="main">
         <section class="hero">
             <div class="wrapper heroWrapper"> 
-                <picture class="heroImage">
+                <picture>
                     <source media="(min-width: 62.5em)" srcset="./assets/images/profilePic-desktop.png" style = "width: 40vw;">
                     <source media="(min-width: 37.5em)" srcset="./assets/images/profilePic-tablet.png" style = "width: 50vw;">
-                    <img src="./assets/images/profilePic.png" alt="Profile Picture of Cindy Andrade" style = "width: 50vw;">
+                    <img 
+                        class="heroImage"
+                        src="./assets/images/profilePic-mobile.png" 
+                        alt= "Profile Picture of Cindy Andrade" 
+                        style = "width: 175px;"
+                    />
                 </picture>
 
                 <!--Default image via mobile, 

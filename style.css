@@ -120,21 +120,26 @@ a:hover {
 /*-------------HERO-------------*/
 
 .hero{
-
 }
 
 .heroWrapper {
-    position: relative; /*so that image is relative to wrapper*/
+    /*display: flow-root;*/
 }
 
 .heroImage {
     position: absolute;
+    top:0;
     left: 50%; /*move it 50% to left from where it was originally*/
-    translate: -50%;
+    translate: -50%; 
+    outline: 1px solid lime;
+    margin-inline: auto;
+    display: block;
 }
 
 .heroText {
-
+    text-align: center; 
+    margin-top: 293px; /* use margin-top instead of top so that the text in the other class/divider isn't affected*/
+    position: relative;
 }
 
 .heroDescription {
