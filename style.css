@@ -38,6 +38,24 @@ body {
     line-height: 1.56;
 }
 
+h1, h2, h3, p{
+    margin-top: 0;
+}
+
+h1, h2, h3 {
+    line-height: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 0.6999999999999997rem + 7.680000000000001vw, 5.5rem);
+}
+
+
+p {
+    line-height: 1.5;
+}
+
 a {
     transition: color var(--transition);
 }
@@ -131,16 +149,35 @@ a:hover {
     top:0;
     left: 50%; /*move it 50% to left from where it was originally*/
     translate: -50%; 
-    outline: 1px solid lime;
+    /* outline: 1px solid lime; */
     margin-inline: auto;
     display: block;
 }
 
 .heroText {
     text-align: center; 
-    margin-top: 293px; /* use margin-top instead of top so that the text in the other class/divider isn't affected*/
+    margin-top: 303px; /* use margin-top instead of top so that the text in the other class/divider isn't affected*/
     position: relative;
 }
+
+h1 > span { /*Underline accent!*/
+    background-image: linear-gradient(to right, var(--green-accent) 75%, var(--green-accent) 75%);
+    background-position: 0 1.18em;
+    background-repeat: repeat-x;
+    background-size: 8px 4px;
+}
+
+/* h1 > span::after {
+    content: ''; /*Creating a pseudo-element?? attempting to raise the position of the green accent underline*/
+    /* height: 4px;
+    background-color: var(--green-accent);
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    bottom: -7px;
+    left: 0; */
+    /* border-bottom: 4px solid var(--green-accent); 
+} */
 
 .heroDescription {
 
