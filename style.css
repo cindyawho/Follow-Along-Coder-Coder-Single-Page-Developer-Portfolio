@@ -50,7 +50,7 @@ h1, h2, h3 {
 h1 {
     font-size: 2.5rem;
     font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 @media (min-width: 600px){
@@ -66,11 +66,11 @@ h1 {
 }
 
 p {
-    line-height: 1.5;
-    font-size: 1rem;
     font-size: 1rem;
     font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
+    line-height: 1.5;
     color: var(--gray-text);
+    margin-bottom: 24px;
 }
 
 a {
@@ -175,6 +175,8 @@ a:hover {
 
 .heroWrapper {
     /*display: flow-root;*/
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--gray-text);
 }
 
 .heroImage {
@@ -199,18 +201,6 @@ h1 > span { /*Underline accent!*/
     background-repeat: repeat-x;
     background-size: 8px 4px;
 }
-
-/* h1 > span::after {
-    content: ''; /*Creating a pseudo-element?? attempting to raise the position of the green accent underline*/
-    /* height: 4px;
-    background-color: var(--green-accent);
-    display: inline-block;
-    width: 100%;
-    position: absolute;
-    bottom: -7px;
-    left: 0; */
-    /* border-bottom: 4px solid var(--green-accent); 
-} */
 
 .heroDescription {
 
