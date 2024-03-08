@@ -77,6 +77,22 @@ a {
     transition: color var(--transition);
 }
 
+a.underline { /*class for the anchor tag*/
+    display: inline-block;
+    font-size: 1rem; 
+    line-height: 1.625rem; /*26px*/
+    letter-spacing: 2.29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-main-text);
+    text-decoration: none;
+    background-image: linear-gradient(to right, var(--green-accent) 75%, var(--green-accent) 75%);
+    background-position: 0 2.1em; /*10px between letters and underline*/
+    background-repeat: repeat-x;
+    background-size: 8px 2px;
+    padding-bottom: 10px;
+}
+
 a:hover {
     color: var(--green-accent);
 }
