@@ -160,6 +160,7 @@ a:hover {
         align-items: center;
         text-align: left;
         gap: 32px;
+        margin-bottom: 90px;
     }
 
     .headerHome{
@@ -210,6 +211,10 @@ a:hover {
     position: relative;
 }
 
+.heroHeadline > br {
+    display: none;
+}
+
 h1 > span { /*Underline accent!*/
     background-image: linear-gradient(to right, var(--green-accent) 75%, var(--green-accent) 75%);
     background-position: 0 1.18em;
@@ -223,4 +228,30 @@ h1 > span { /*Underline accent!*/
 
 .heroContact {
 
+}
+
+@media (min-width: 37.5em){
+    .heroImage{
+        width: 20.125rem;
+        height: auto;
+        left: auto;
+        right: 0;
+        translate: 0;
+    }
+
+    .heroText{
+        width: 58vw; /*445px test size/778px viewport*/
+        text-align: left;
+        position: relative;
+        margin-top: 0;
+    }
+    .heroHeadline > br {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 62.5em){
+    .heroHeadline > br {
+        display: none;
+    }
 }
