@@ -122,6 +122,8 @@ a:hover {
 /*-------------Header-------------*/
 .header{
     margin-top: 20px; /*use rem mostly for text, px is okay for smaller stuff that doesn't need to scale*/
+    position: relative;
+    z-index: 1;
 }
 
 .headerNav{
@@ -240,10 +242,9 @@ h1 > span { /*Underline accent!*/
     }
 
     .heroText{
-        width: 58vw; /*445px test size/778px viewport*/
-        text-align: left;
-        position: relative;
+        width: 62vw; 
         margin-top: 0;
+        text-align: left;
     }
     .heroHeadline > br {
         display: inline-block;
