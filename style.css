@@ -157,6 +157,9 @@ a:hover {
 }
 
 @media (min-width: 37.5em) {
+    .header{
+        margin-top: 30px;
+    }
     .headerNav{
         justify-content: flex-start;
         align-items: center;
@@ -233,12 +236,27 @@ h1 > span { /*Underline accent!*/
 }
 
 @media (min-width: 37.5em){
+    /* .heroWrapper{
+        padding-bottom: 80px;
+        border-bottom: 1px solid white;
+        position: relative;
+    } */
+    
     .heroImage{
         width: 20.125rem;
         height: auto;
         left: auto;
         right: 0;
         translate: 0;
+    }
+
+    .heroCircle{
+        top: 370px; 
+    }
+
+    .heroRings{
+        top: 80px;
+        translate: -30%;
     }
 
     .heroText{
