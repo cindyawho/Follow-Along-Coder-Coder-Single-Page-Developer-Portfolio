@@ -90,7 +90,7 @@ a.underline { /*class for the anchor tag*/
     background-position: 0 2.1em; /*10px between letters and underline*/
     background-repeat: repeat-x;
     background-size: 8px 2px;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 
 a:hover {
@@ -199,27 +199,28 @@ a:hover {
 
 .heroRings{
     position: absolute;
-    top: 6.25rem;
+    top: 100px; /*6.25rem;*/
     right: 15%;
     z-index: -1; /*move image behind profile picture*/
-    width: 33.125rem;
-    height: auto;
+    /* width: 33.125rem;
+    height: auto; */
 }
 
 .heroCircle{
     position: absolute;
-    top: 15.875rem;
+    top: 254px; /*15.875rem;*/
     right: 0;
     translate: 50%; /*DYNAMIC*/
-    width: 8.0625rem;
-    height: 8.0625rem;
+    /* width: 8.0625rem;
+    height: 8.0625rem; */
     /*right: -64.5px;*/
 }
 
 .heroText {
-    text-align: center; 
-    margin-top: 18.9375rem; /* use margin-top instead of top so that the text in the other class/divider isn't affected*/
     position: relative;
+    text-align: center; 
+    /* margin-top: 18.9375rem; use margin-top instead of top so that the text in the other class/divider isn't affected */
+    margin-top: 303px;
 }
 
 .heroHeadline > br {
