@@ -145,18 +145,24 @@ a:hover {
 @media (min-width: 37.5em) {
     .header{
         margin-top: 30px;
+        margin-bottom: 90px;
     }
     .headerNav{
         justify-content: flex-start;
         align-items: center;
         text-align: left;
         gap: 32px;
-        margin-bottom: 90px;
     }
 
     .headerHome{
         flex: 1;
         margin-inline-end: auto;
+    }
+}
+
+@media (min-width:62.5em){
+    .header{
+        margin-bottom: 127px;
     }
 }
 
@@ -179,7 +185,7 @@ a:hover {
     /* outline: 1px solid lime; */
     /* margin-inline: auto; */
     display: block;
-    width: 10.875rem;
+    width: 12rem;
     height: auto;
 }
 
@@ -238,7 +244,7 @@ h1 > span { /*Underline accent!*/
     }
     
     .heroImage{
-        width: 20.125rem;
+        width: 322px;
         height: auto;
         left: auto;
         right: 0;
@@ -274,8 +280,18 @@ h1 > span { /*Underline accent!*/
 }
 
 @media (min-width: 62.5em){ /*Desktop*/
+    .heroWrapper{
+        position: relative;
+    }
+    
     .heroHeadline {
         margin-bottom: 43px;
+    }
+
+    .heroImage {
+        width: 400px;
+        /* Moving image up so that it's flush against top */
+        translate: 0 -200px;
     }
     
     .heroHeadline > br {
