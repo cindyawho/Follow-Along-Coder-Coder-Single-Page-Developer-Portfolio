@@ -48,14 +48,15 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+    font-size: 2.1875rem;
+    font-size: clamp(2.1875rem, -2.03125rem + 11.25vw, 5rem);
     letter-spacing: -0.0284em;
+    line-height: 1.1;
 }
 
 p {
-    font-size: 1rem;
-    font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.5rem + 1vw, 1.125rem);  
     line-height: 1.5;
     color: var(--gray-text);
 }
@@ -146,7 +147,7 @@ a:hover {
 @media (min-width: 37.5em) {
     .header{
         margin-top: 30px;
-        margin-bottom: 90px;
+        /* margin-bottom: 90px; */
     }
     .headerNav{
         justify-content: flex-start;
@@ -245,11 +246,27 @@ h1 > span { /*Underline accent!*/
 }
 
 @media (min-width: 37.5em){ /*Tablet*/
+    .hero{
+        margin-top: -75px;
+    }
+
     .heroWrapper {
         padding-bottom: 60px;
     }
     
-    .heroImage{        
+    .heroContent{
+        display: flex;
+        /* overflow-x: visible; */
+        align-items: flex-end;
+    }
+
+    .heroContent picture {
+        order: 2;
+        /* margin-right: -30px; */
+    }
+
+    .heroImage{      
+        position: relative;  
         width: 42vw;
         max-width: 445px;
         /* width: clamp(20.125rem, 8.59375rem + 30.75vw, 27.8125rem); */
@@ -262,17 +279,22 @@ h1 > span { /*Underline accent!*/
 
     .heroCircle{
         top: 370px; 
+        z-index: 1;
     }
 
     .heroRings{
-        top: 80px;
-        translate: -30%;
+        top: 90px;
+        /* translate: -30%; */
     }
 
     .heroText{
-        width: 62vw; 
+        /* width: 62vw;  */
         margin-top: 0;
+        margin-right: -30px;
+        flex: 1 0 58vw;
         text-align: left;
+        z-index: 1;
+        /* margin-right: -72px; */
     }
 
     .heroHeadline {
@@ -285,7 +307,7 @@ h1 > span { /*Underline accent!*/
 
     .heroDescription {
         margin-bottom: 34px;
-        width: 70%; 
+        /* width: 70%;  */
     }
 }
 

@@ -135,71 +135,71 @@
     <main id="main">
         <section class="hero">
             <div class="wrapper heroWrapper"> 
-                <picture>
-                    <source 
-                        media="(min-width: 62.5em)" 
-                        srcset="./assets/images/profilePic-desktop.png" 
-                    >
-                    <source 
-                        media="(min-width: 37.5em)" 
-                        srcset="./assets/images/profilePic-tablet.png"
-                    >
-                    <img 
-                        class="heroImage"
-                        src="./assets/images/profilePic-mobile.png" 
-                        alt= "Profile Picture of Cindy Andrade" 
-                        width= "175px" 
-                        height= "auto"
-                    />
-                </picture>
-
-                <!--Default image via mobile, 
-                    sizes originally had "(min-width: 600px) 53vw, (min-width: 1000px) 33vw"
-                    53vw gotten by 409/768, 768 is from design doc tablet size
-                    Switching to max-width because if you use min-width, the images just keep growing with larger desktop monitors
-                    Also 599.98px because media query is 600 px and you don't want to mix the max and min widths
-
-                    Note: pixel density is messing up the mobile image rendering because the other images may look pixelated
-                    So we are using picture tag from https://dev.opera.com/articles/native-responsive-images/ now and deleting this: 
+                <div class="heroContent">
+                    <picture>
+                        <source 
+                            media="(min-width: 62.5em)" 
+                            srcset="./assets/images/profilePic-desktop.png" 
+                        >
+                        <source 
+                            media="(min-width: 37.5em)" 
+                            srcset="./assets/images/profilePic-tablet.png"
+                        >
                         <img 
-                            src="./assets/images/profilePic.png" 
-                            alt = "Profile Picture of Cindy Andrade" 
-                            srcset="
-                                ./assets/images/profilePic.png 338w, 
-                                ./assets/images/profilePic-tablet.png 409w, 
-                                ./assets/images/profilePic-desktop.png 473w
-                            " 
-                            sizes = "(max-width: 599.98px) 70vw, (max-width: 998.98px) 53vw, 473px"
-                        /> "
-                -->
-                <!--Note that for decorative images, no alt text is needed so that screen readers do not get confused of image importance-->
-                <img 
-                    class="heroRings" 
-                    src="./assets/images/svg-icons/pattern-rings.svg" 
-                    alt="" 
-                    width="530" 
-                    height="129"
-                />
-                <img 
-                    class="heroCircle" 
-                    src="./assets/images/svg-icons/patternCircle.svg" 
-                    alt="" 
-                    width="129" 
-                    height="129"
-                />
+                            class="heroImage"
+                            src="./assets/images/profilePic-mobile.png" 
+                            alt= "Profile Picture of Cindy Andrade" 
+                            width= "175px" 
+                            height= "auto"
+                        />
+                    </picture>
 
-                <div class="heroText">
-                    <h1 class="heroHeadline">
-                        Nice to <br/> meet you! 
-                        I'm <span>Cindy Andrade</span>.
-                    </h1>
-                    <p class="heroDescription">
-                        Based in Los Angeles, I'm currently a math teacher developing my coding skills. I'm enjoying this journey as I learn and practice web development, python and more!
-                    </p>
-                    <a href="" class="heroContact underline">Contact Me</a>
+                    <!--Default image via mobile, 
+                        sizes originally had "(min-width: 600px) 53vw, (min-width: 1000px) 33vw"
+                        53vw gotten by 409/768, 768 is from design doc tablet size
+                        Switching to max-width because if you use min-width, the images just keep growing with larger desktop monitors
+                        Also 599.98px because media query is 600 px and you don't want to mix the max and min widths
+
+                        Note: pixel density is messing up the mobile image rendering because the other images may look pixelated
+                        So we are using picture tag from https://dev.opera.com/articles/native-responsive-images/ now and deleting this: 
+                            <img 
+                                src="./assets/images/profilePic.png" 
+                                alt = "Profile Picture of Cindy Andrade" 
+                                srcset="
+                                    ./assets/images/profilePic.png 338w, 
+                                    ./assets/images/profilePic-tablet.png 409w, 
+                                    ./assets/images/profilePic-desktop.png 473w
+                                " 
+                                sizes = "(max-width: 599.98px) 70vw, (max-width: 998.98px) 53vw, 473px"
+                            /> "
+                    -->
+                    <!--Note that for decorative images, no alt text is needed so that screen readers do not get confused of image importance-->
+                    <img 
+                        class="heroRings" 
+                        src="./assets/images/svg-icons/pattern-rings.svg" 
+                        alt="" 
+                        width="530" 
+                        height="129"
+                    />
+                    <img 
+                        class="heroCircle" 
+                        src="./assets/images/svg-icons/patternCircle.svg" 
+                        alt="" 
+                        width="129" 
+                        height="129"
+                    />
+
+                    <div class="heroText">
+                        <h1 class="heroHeadline">
+                            Nice to <br/> meet you! 
+                            I'm <span>Cindy Andrade</span>.
+                        </h1>
+                        <p class="heroDescription">
+                            Based in Los Angeles, I'm currently a math teacher developing my coding skills. I'm enjoying this journey as I learn and practice web development, python and more!
+                        </p>
+                        <a href="" class="heroContact underline">Contact Me</a>
+                    </div>
                 </div>
-                
-                
             </div>
         </section>
         
