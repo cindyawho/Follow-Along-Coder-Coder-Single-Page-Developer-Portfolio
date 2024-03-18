@@ -50,6 +50,7 @@ h1, h2, h3 {
 h1 {
     font-size: 2.5rem;
     font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
+    letter-spacing: -0.0284em;
 }
 
 p {
@@ -67,7 +68,7 @@ a.underline { /*class for the anchor tag*/
     display: inline-block;
     font-size: 1rem; 
     line-height: 1.625rem; /*26px*/
-    letter-spacing: 2.29px;
+    letter-spacing: 0.143em;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--white-main-text);
@@ -155,14 +156,19 @@ a:hover {
     }
 
     .headerHome{
-        flex: 1;
+        flex: 0 1 auto;
         margin-inline-end: auto;
     }
 }
 
 @media (min-width:62.5em){
     .header{
+        margin-top: 40px;
         margin-bottom: 127px;
+    }
+
+    .headerNav{
+        padding-right: 30px;
     }
 }
 
@@ -289,9 +295,16 @@ h1 > span { /*Underline accent!*/
     }
 
     .heroImage {
-        width: 400px;
+        width: 445px;
         /* Moving image up so that it's flush against top */
-        translate: 0 -200px;
+        translate: 0 -210px;
+    }
+
+    .heroCircle{
+        position: absolute;
+        top: 250px;
+        right: 445px;
+        translate: 50%;
     }
     
     .heroHeadline > br {
