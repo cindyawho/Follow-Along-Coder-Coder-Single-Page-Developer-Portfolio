@@ -50,19 +50,6 @@ h1, h2, h3 {
 h1 {
     font-size: 2.5rem;
     font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
-    margin-bottom: 24px;
-}
-
-@media (min-width: 600px){
-    h1{
-        margin-bottom: 60px;;
-    }
-}
-
-@media (min-width: 1000px){
-    h1{
-        margin-bottom: 43px;
-    }
 }
 
 p {
@@ -70,7 +57,6 @@ p {
     font-size: clamp(1rem, 0.79rem + 0.89vw, 1.125rem);
     line-height: 1.5;
     color: var(--gray-text);
-    margin-bottom: 24px;
 }
 
 a {
@@ -223,6 +209,10 @@ a:hover {
     margin-top: 303px;
 }
 
+.heroHeadline {
+    margin-bottom: 24px;
+}
+
 .heroHeadline > br {
     display: none;
 }
@@ -235,19 +225,17 @@ h1 > span { /*Underline accent!*/
 }
 
 .heroDescription {
-
+    margin-bottom: 24px;
 }
 
 .heroContact {
 
 }
 
-@media (min-width: 37.5em){
-    /* .heroWrapper{
-        padding-bottom: 80px;
-        border-bottom: 1px solid white;
-        position: relative;
-    } */
+@media (min-width: 37.5em){ /*Tablet*/
+    .heroWrapper {
+        padding-bottom: 60px;
+    }
     
     .heroImage{
         width: 20.125rem;
@@ -271,13 +259,30 @@ h1 > span { /*Underline accent!*/
         margin-top: 0;
         text-align: left;
     }
+
+    .heroHeadline {
+        margin-bottom: 60px;
+    }
+
     .heroHeadline > br {
         display: inline-block;
     }
+
+    .heroDescription {
+        margin-bottom: 34px;
+    }
 }
 
-@media (min-width: 62.5em){
+@media (min-width: 62.5em){ /*Desktop*/
+    .heroHeadline {
+        margin-bottom: 43px;
+    }
+    
     .heroHeadline > br {
         display: none;
+    }
+
+    .heroDescription {
+        margin-bottom: 66px;
     }
 }
