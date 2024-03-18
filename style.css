@@ -288,6 +288,7 @@ h1 > span { /*Underline accent!*/
 @media (min-width: 62.5em){ /*Desktop*/
     .heroWrapper{
         position: relative;
+        padding-bottom: 150px;
     }
     
     .heroHeadline {
@@ -302,9 +303,14 @@ h1 > span { /*Underline accent!*/
 
     .heroCircle{
         position: absolute;
-        top: 250px;
+        top: 270px;
         right: 445px;
         translate: 50%;
+    }
+
+    .heroRings{
+        top: -70px;
+        translate: -110%;
     }
     
     .heroHeadline > br {
