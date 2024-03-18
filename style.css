@@ -249,8 +249,11 @@ h1 > span { /*Underline accent!*/
         padding-bottom: 60px;
     }
     
-    .heroImage{
-        width: 322px;
+    .heroImage{        
+        width: 42vw;
+        max-width: 445px;
+        /* width: clamp(20.125rem, 8.59375rem + 30.75vw, 27.8125rem); */
+        /* width: 322px; */
         height: auto;
         left: auto;
         right: 0;
@@ -282,6 +285,7 @@ h1 > span { /*Underline accent!*/
 
     .heroDescription {
         margin-bottom: 34px;
+        width: 70%; 
     }
 }
 
@@ -296,6 +300,7 @@ h1 > span { /*Underline accent!*/
     }
 
     .heroImage {
+        /* width: clamp(20.125rem, 8.59375rem + 30.75vw, 27.8125rem); */
         width: 445px;
         /* Moving image up so that it's flush against top */
         translate: 0 -210px;
@@ -319,5 +324,6 @@ h1 > span { /*Underline accent!*/
 
     .heroDescription {
         margin-bottom: 66px;
+        width: 38ch; /*ch is characters wide*/
     }
 }
