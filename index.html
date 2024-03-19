@@ -28,14 +28,7 @@
                 <a href="./index.html" class="headerHome">
                     cindyAndrade
                     <span class="visuallyHidden">(to home page)</span>
-                </a> <!--link to homepage-->
-                <!-- <a href="https://github.com/cindyawho"
-                    ><img 
-                        src="./assets/images/github-Icon.png" 
-                        alt="GitHub Icon" 
-                        width="24.62" 
-                        height="24"
-                /></a> -->
+                </a>
                 
                 <!--Implementing an SVG used https://nikitahl.github.io/svg-2-code/ to convert-->
                 <a href="https://github.com/cindyawho" class="headerSocial">
@@ -154,25 +147,6 @@
                         />
                     </picture>
 
-                    <!--Default image via mobile, 
-                        sizes originally had "(min-width: 600px) 53vw, (min-width: 1000px) 33vw"
-                        53vw gotten by 409/768, 768 is from design doc tablet size
-                        Switching to max-width because if you use min-width, the images just keep growing with larger desktop monitors
-                        Also 599.98px because media query is 600 px and you don't want to mix the max and min widths
-
-                        Note: pixel density is messing up the mobile image rendering because the other images may look pixelated
-                        So we are using picture tag from https://dev.opera.com/articles/native-responsive-images/ now and deleting this: 
-                            <img 
-                                src="./assets/images/profilePic.png" 
-                                alt = "Profile Picture of Cindy Andrade" 
-                                srcset="
-                                    ./assets/images/profilePic.png 338w, 
-                                    ./assets/images/profilePic-tablet.png 409w, 
-                                    ./assets/images/profilePic-desktop.png 473w
-                                " 
-                                sizes = "(max-width: 599.98px) 70vw, (max-width: 998.98px) 53vw, 473px"
-                            /> "
-                    -->
                     <!--Note that for decorative images, no alt text is needed so that screen readers do not get confused of image importance-->
                     <img 
                         class="heroRings" 
