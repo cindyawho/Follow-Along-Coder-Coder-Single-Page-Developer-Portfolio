@@ -248,6 +248,7 @@ h1 > span { /*Underline accent!*/
 @media (min-width: 37.5em){ /*Tablet*/
     .hero{
         margin-top: -75px;
+        position: relative;
     }
 
     .heroWrapper {
@@ -273,12 +274,14 @@ h1 > span { /*Underline accent!*/
         /* width: 322px; */
         height: auto;
         left: auto;
-        right: 0;
+        right: 20px;
         translate: 0;
     }
 
     .heroCircle{
-        top: 370px; 
+        top: auto; 
+        /* right: 8vw; */
+        bottom: 60px;
         z-index: 1;
     }
 
@@ -319,6 +322,10 @@ h1 > span { /*Underline accent!*/
     
     .heroHeadline {
         margin-bottom: 43px;
+    }
+
+    .heroContent{
+        align-items: center;
     }
 
     .heroImage {
