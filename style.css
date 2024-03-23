@@ -377,3 +377,31 @@ h1 > span { /*Underline accent!*/
         width: 38ch; /*ch is characters wide*/
     }
 }
+
+/*-------------SKILLS-------------*/
+.skills{
+
+}
+
+.skillsWrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    /* instead of padding because it only sets top and bottom, ignores sides */
+    padding-block: 40px;
+}
+
+.skillsItem{
+    text-align: center;
+}
+
+.skillsTitle{
+    font-size: 2rem;
+    font-size: clamp(2rem, 0.33rem + 7.11vw, 3rem);
+    line-height: 1.17rem;
+    margin-bottom: 2px;
+}
+
+.skillsDescription{
+    /* line-height: 1.625rem; */
+}
