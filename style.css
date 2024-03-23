@@ -380,7 +380,7 @@ h1 > span { /*Underline accent!*/
 
 /*-------------SKILLS-------------*/
 .skills{
-
+    position: relative;
 }
 
 .skillsWrapper{
@@ -402,6 +402,8 @@ h1 > span { /*Underline accent!*/
     margin-bottom: 2px;
 }
 
-.skillsDescription{
-    /* line-height: 1.625rem; */
+.skillsRings{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
