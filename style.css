@@ -37,6 +37,7 @@ body {
     font-size: var(--fs-18);
     line-height: 1.56;
     padding-bottom: 30rem; /*let's us scroll down to test*/
+    overflow-x: hidden;
 }
 
 h1, h2, h3, p{
@@ -288,6 +289,8 @@ h1 > span { /*Underline accent!*/
     .heroRings{
         top: 90px;
         /* translate: -30%; */
+        right: auto;
+        translate: -50%;
     }
 
     .heroText{
@@ -315,9 +318,14 @@ h1 > span { /*Underline accent!*/
 }
 
 @media (min-width: 62.5em){ /*Desktop*/
+    .hero {
+        margin-top: 0px;
+    }
+    
     .heroWrapper{
         position: relative;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
+        /*Testing Value for scrolling: padding-bottom: 260px; */
     }
     
     .heroHeadline {
@@ -325,28 +333,41 @@ h1 > span { /*Underline accent!*/
     }
 
     .heroContent{
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    .heroContent picture {
+        margin-left: -80px;
     }
 
     .heroImage {
         /* width: clamp(20.125rem, 8.59375rem + 30.75vw, 27.8125rem); */
         width: 445px;
         /* Moving image up so that it's flush against top */
-        translate: 0 -210px;
+        /* translate: 0 -210px; */
+        margin-top: -210px;
+        /* right: auto; */
     }
 
     .heroCircle{
         position: absolute;
         top: 270px;
         right: 445px;
-        translate: 50%;
+        /* translate: 50%; */
     }
 
     .heroRings{
-        top: -70px;
-        translate: -110%;
+        top: 0px;
+        /* translate: -110%; */
+        translate: -50% -50%;
     }
     
+    .heroText {
+        margin-top: 0;
+        margin-right: 0;
+        flex: 1;
+    }
+
     .heroHeadline > br {
         display: none;
     }
