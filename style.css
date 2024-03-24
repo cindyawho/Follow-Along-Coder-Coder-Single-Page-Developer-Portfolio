@@ -1,4 +1,6 @@
-/*-------------Global Styles-------------*/
+/**************************************
+-------------Global Styles-------------
+**************************************/
 
 :root {
     /*Font Size Colors*/
@@ -107,8 +109,16 @@ a:hover {
         width: calc(100% - 3.75rem);
     }
 }
+/************************************
+-------------UTILITY-------------
+************************************/
+.bottom-border {
+    border-bottom: 1px solid var(--white-main-text);
+}
 
-/*-------------Header-------------*/
+/************************************
+-------------Header-------------
+************************************/
 .header{
     margin-top: 20px; /*use rem mostly for text, px is okay for smaller stuff that doesn't need to scale*/
     position: relative;
@@ -174,15 +184,13 @@ a:hover {
     }
 }
 
-/*-------------HERO-------------*/
-
-.hero{
-}
+/************************************
+-------------HERO-------------
+************************************/
 
 .heroWrapper {
     /*display: flow-root;*/
     padding-bottom: 80px;
-    border-bottom: 1px solid var(--gray-text);
 }
 
 .heroImage {
@@ -240,10 +248,6 @@ h1 > span { /*Underline accent!*/
 
 .heroDescription {
     margin-bottom: 24px;
-}
-
-.heroContact {
-
 }
 
 @media (min-width: 37.5em){ /*Tablet*/
@@ -378,7 +382,9 @@ h1 > span { /*Underline accent!*/
     }
 }
 
-/*-------------SKILLS-------------*/
+/************************************
+-------------SKILLS-------------
+************************************/
 .skills{
     position: relative;
 }
@@ -399,11 +405,12 @@ h1 > span { /*Underline accent!*/
     font-size: 2rem;
     font-size: clamp(2rem, 0.33rem + 7.11vw, 3rem);
     line-height: 1.17rem;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
 .skillsRings{
     position: absolute;
-    right: 0;
-    bottom: 0;
+    bottom: 0;    
+    left: 50%;
+    translate: 0 50%;
 }
