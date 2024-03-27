@@ -461,20 +461,24 @@ h1 > span { /*Underline accent!*/
     padding-block: 80px;
 }
 
-.projectsHeadline{
+.projectsGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 
+}
+
+.projectsHeadline{
+    grid-column: 1 / 2;
+    margin-block-end: 0;
 }
 
 .projectsContact {
-
-}
-
-.projectsGrid{
-
+    grid-column: 2 / 3;
 }
 
 .projectsItem{
-
+    grid-column: 1 / span 2;
 }
 
 .projectsLinks{
