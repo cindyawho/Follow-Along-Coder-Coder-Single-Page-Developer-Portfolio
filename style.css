@@ -50,7 +50,7 @@ h1, h2, h3 {
     line-height: 1;
 }
 
-h1 {
+.headerXL {
     font-size: 2.1875rem;
     font-size: clamp(2.1875rem, -2.03125rem + 11.25vw, 5rem);
     letter-spacing: -0.0284em;
@@ -452,3 +452,37 @@ h1 > span { /*Underline accent!*/
 /************************************
 -------------PROJECTS-------------
 ************************************/
+
+.projects{
+
+}
+
+.projectsWrapper{
+    padding-block: 80px;
+}
+
+.projectsHeadline{
+
+}
+
+.projectsContact {
+
+}
+
+.projectsGrid{
+
+}
+
+.projectsItem{
+
+}
+
+.projectsLinks{
+
+}
+
+@media (min-width: 37.5em) {
+}
+
+@media (min-width: 62.5em) {
+}
