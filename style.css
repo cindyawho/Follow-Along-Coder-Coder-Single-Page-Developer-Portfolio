@@ -475,6 +475,7 @@ h1 > span { /*Underline accent!*/
 
 .projectsContact {
     grid-column: 2 / 3;
+    justify-self: end;
 }
 
 .projectsItem{
