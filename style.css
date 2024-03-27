@@ -22,6 +22,10 @@
     --transition: 250ms ease-in-out;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 html {
     box-sizing: border-box; /*so that padding doesn't add width or height to the elements*/
     font-size: 100; /*takes browser based font styles*/
@@ -39,7 +43,6 @@ body {
     font-size: var(--fs-18);
     line-height: 1.56;
     padding-bottom: 30rem; /*let's us scroll down to test*/
-    overflow-x: hidden;
 }
 
 h1, h2, h3, p{
@@ -211,13 +214,11 @@ img, svg {
 }
 
 .heroCircle{
-    position: absolute;
-    top: 254px; /*15.875rem;*/
-    right: 0;
-    translate: 50%; /*DYNAMIC*/
-    /* width: 8.0625rem;
-    height: 8.0625rem; */
-    /*right: -64.5px;*/
+    top: 171px;
+    margin-bottom: -129px;    
+    position: relative; /*relative Got rid of horizontal scroll for some reason*/
+    translate: calc(100vw - 50% - 16px);
+
 }
 
 .heroText {
