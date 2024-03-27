@@ -405,7 +405,7 @@ h1 > span { /*Underline accent!*/
     font-size: 2rem;
     font-size: clamp(2rem, 0.33rem + 7.11vw, 3rem);
     line-height: 1.17rem;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .skillsRings{
@@ -413,4 +413,21 @@ h1 > span { /*Underline accent!*/
     bottom: 0;    
     left: 50%;
     translate: 0 50%;
+}
+
+@media (min-width: 37.5em) {
+    .skillsWrapper{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 52px 24px; /*row and col gap*/
+        border: none;
+        padding-block: 52px 0;
+    }
+
+    .skillsItem{
+        text-align: left;
+    }
+
+    .skillsRings{
+        translate: 40% 50%;
+    }
 }
