@@ -45,7 +45,10 @@ body {
     color: var(--white-main-text);
     font-size: var(--fs-18);
     line-height: 1.56;
-    padding-bottom: 30rem; /*let's us scroll down to test*/
+}
+
+.bg-less-dark {
+    background-color: var(--dark-grey-bg);
 }
 
 h1, h2, h3, p{
@@ -622,7 +625,6 @@ h1 > span { /*Underline accent!*/
 ************************************/
 
 .contact{
-    background-color: var(--dark-grey-bg);
     position: relative;
 }
 
@@ -737,5 +739,24 @@ h1 > span { /*Underline accent!*/
     .contactRings{
         bottom: 47px;
         translate: -30%;
+    }
+}
+
+/************************************
+-------------FOOTER-------------
+************************************/
+.footer{
+    padding-block: 40px 60px;
+}
+
+@media (min-width: 37.5em) {
+    .footer{
+        padding-block: 30px 40px;
+    }
+}
+
+@media (min-width: 62.5em) {
+    .footer{
+        padding-block: 47px 92px;
     }
 }
