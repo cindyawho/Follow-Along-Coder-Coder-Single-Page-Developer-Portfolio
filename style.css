@@ -622,11 +622,10 @@ h1 > span { /*Underline accent!*/
 ************************************/
 
 .contact{
-
 }
 
 .contactWrapper{
-
+    max-width: 27.8rem;
 }
 
 .contactText{
@@ -634,11 +633,11 @@ h1 > span { /*Underline accent!*/
 }
 
 .contactForm{
-
 }
 
 .contactControl{
-
+    position: relative;
+    margin-block-end: 16px;
 }
 
 .contactControl input, .contactControl textarea{
@@ -650,14 +649,8 @@ h1 > span { /*Underline accent!*/
     font-size: 1rem;
     line-height: 1.625rem;
     padding-block: 16px;
-    padding-inline: 24px;    
-    margin-block-end: 16px;
+    padding-inline: 24px;
 }
-/* 
-.contactControl input:focus-visible, 
-.contactControl textarea:focus-visible {
-    border-bottom-color: var(--green-accent);
-} */
 
 .contactControl > *::placeholder{
     color: var(--white-main-text);
@@ -680,4 +673,31 @@ h1 > span { /*Underline accent!*/
 .contactControl button{
     background-color: transparent;
     border: none;
+}
+
+.contactInvalidIcon {
+    width: var(--fs-24);
+    height: var(--fs-24);
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.contact input:focus-visible:invalid ~ .contactInvalidIcon,
+.contact textarea:focus-visible:invalid ~ .contactInvalidIcon {
+    display: inline-block;
+}
+
+.contact textarea:focus-visible:invalid ~ .contactInvalidIcon {
+    top: 1.2rem;
+    right: 1.5rem;
+    translate: none;
+}
+
+@media (min-width: 37.5em) {
+}
+
+@media (min-width: 62.5em) {
 }
