@@ -71,6 +71,12 @@ a {
     transition: color var(--transition);
 }
 
+a:focus-visible {
+    /* Never set outline to none since that is not accessible friendly! Instead match it to the design */
+    outline: 2px dashed var(--green-accent);
+    outline-offset: 2px;
+}
+
 a.underline { /*class for the anchor tag*/
     display: inline-block;
     font-size: 1rem; 
@@ -474,6 +480,7 @@ h1 > span { /*Underline accent!*/
 .projectsContact {
     grid-column: 2 / 3;
     justify-self: end;
+    align-self: center;
 }
 
 .projectsItem{
