@@ -576,6 +576,7 @@ h1 > span { /*Underline accent!*/
         align-self: center;
         z-index: 1;
         opacity: 0;
+        transition: opacity 400ms ease-in-out;
     }
 
     .projectsItem:hover .projectsLinks{
