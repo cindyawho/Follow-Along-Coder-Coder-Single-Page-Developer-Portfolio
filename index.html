@@ -373,9 +373,30 @@
         </section>
 
         <section class="contact">
-            Contact
-            I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible. 
-        </section>
+            <div class="wrapper contactWrapper">
+                <div class="contactText">
+                    <h2 class="contactHeadline">Contact</h2>
+                    <p class="contactDescription">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p> 
+                </div>
+                <form action="mailto:cindyandcode@gmail.com" method="post" enctype="text/plain" class="contactForm">
+                    <div class="contactControl">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name"/>
+                    </div>
+                    <div class="contactControl">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email"/>
+                    </div>
+                    <div class="contactControl">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" row="10"></textarea>
+                     </div>
+                     <div class="contactControl">
+                        <button type="Submit">Send Message</button>
+                     </div>
+                </form>
+            </div>
+       </section>
         
     </main>
 
