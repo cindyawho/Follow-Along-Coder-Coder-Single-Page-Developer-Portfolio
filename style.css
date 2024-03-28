@@ -35,9 +35,12 @@ html {
     box-sizing: inherit;
 }
 
+body, textarea, input, button {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: 'Space Grotesk', sans-serif;
     background-color: var(--black-bg);
     color: var(--white-main-text);
     font-size: var(--fs-18);
@@ -71,13 +74,17 @@ a {
     transition: color var(--transition);
 }
 
-a:focus-visible {
+a:focus-visible, input:focus-visible, textarea:focus-visible {
     /* Never set outline to none since that is not accessible friendly! Instead match it to the design */
     outline: 2px dashed var(--green-accent);
     outline-offset: 2px;
 }
 
-a.underline { /*class for the anchor tag*/
+input:invalid, textarea:invalid {
+    outline-color: var(--red-invalid);
+}
+
+a.underline, button { /*class for the anchor tag*/
     display: inline-block;
     font-size: 1rem; 
     line-height: 1.625rem; /*26px*/
@@ -456,11 +463,6 @@ h1 > span { /*Underline accent!*/
 /************************************
 -------------PROJECTS-------------
 ************************************/
-
-.projects{
-
-}
-
 .projectsWrapper{
     padding-block: 80px;
 }
@@ -613,4 +615,69 @@ h1 > span { /*Underline accent!*/
     .projectsTags{
         margin-block-end: 0;
     }
+}
+
+/************************************
+-------------CONTACT-------------
+************************************/
+
+.contact{
+
+}
+
+.contactWrapper{
+
+}
+
+.contactText{
+    text-align: center;
+}
+
+.contactForm{
+
+}
+
+.contactControl{
+
+}
+
+.contactControl input, .contactControl textarea{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--white-main-text);
+    color: var(--white-main-text);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    padding-block: 16px;
+    padding-inline: 24px;    
+    margin-block-end: 16px;
+}
+/* 
+.contactControl input:focus-visible, 
+.contactControl textarea:focus-visible {
+    border-bottom-color: var(--green-accent);
+} */
+
+.contactControl > *::placeholder{
+    color: var(--white-main-text);
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.contactControl input{
+}
+
+.contactControl textarea{
+    margin-block-end: 32px;
+}
+
+.contactControl.alignRight{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contactControl button{
+    background-color: transparent;
+    border: none;
 }
