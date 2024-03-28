@@ -464,7 +464,7 @@ h1 > span { /*Underline accent!*/
 -------------PROJECTS-------------
 ************************************/
 .projectsWrapper{
-    padding-block: 80px;
+    padding-block: 140px;
 }
 
 .projectsGrid{
@@ -622,14 +622,15 @@ h1 > span { /*Underline accent!*/
 ************************************/
 
 .contact{
+    background-color: var(--dark-grey-bg);
 }
 
 .contactWrapper{
-    max-width: 27.8rem;
+    padding-block: 84px;
 }
 
-.contactText{
-    text-align: center;
+.contactHeadline {
+    margin-block-end: 1.25rem;
 }
 
 .contactForm{
@@ -696,8 +697,23 @@ h1 > span { /*Underline accent!*/
     translate: none;
 }
 
-@media (min-width: 37.5em) {
+/* 999.98px so it doesn't overlap weirdly with min width, for mobile and tablet */
+@media (max-width: 62.49875em) {
+    .contactWrapper{
+        max-width: 27.8rem;
+    }
+    .contactText{
+        text-align: center;
+    }
 }
 
 @media (min-width: 62.5em) {
+    .contactWrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 27.8rem);
+        justify-content: space-between;
+    }
+    .contactHeadline {
+        margin-block-end: 2.25rem;
+    }
 }
