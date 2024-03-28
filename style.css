@@ -521,8 +521,29 @@ h1 > span { /*Underline accent!*/
     .projectsGrid{
         gap: 70px 30px;
     }
+
+    .projectsItem{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .projectsItem picture {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
     .projectsImage{
         width: 100%;
         height: auto;
+    }
+
+    .projectsLinks{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .projectsTags{
+        margin-block-end: 0;
     }
 }
