@@ -623,6 +623,7 @@ h1 > span { /*Underline accent!*/
 
 .contact{
     background-color: var(--dark-grey-bg);
+    position: relative;
 }
 
 .contactWrapper{
@@ -697,6 +698,20 @@ h1 > span { /*Underline accent!*/
     translate: none;
 }
 
+.contactRings{
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+    translate: -75%;
+}
+
+@media (min-width: 37.5em){
+    .contactRings{
+        bottom: 47px;
+        translate: -80%;
+    }
+}
+
 /* 999.98px so it doesn't overlap weirdly with min width, for mobile and tablet */
 @media (max-width: 62.49875em) {
     .contactWrapper{
@@ -704,6 +719,9 @@ h1 > span { /*Underline accent!*/
     }
     .contactText{
         text-align: center;
+    }
+    .contactRings{
+        translate: -50%;
     }
 }
 
@@ -715,5 +733,9 @@ h1 > span { /*Underline accent!*/
     }
     .contactHeadline {
         margin-block-end: 2.25rem;
+    }
+    .contactRings{
+        bottom: 47px;
+        translate: -30%;
     }
 }
